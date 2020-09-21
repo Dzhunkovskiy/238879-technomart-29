@@ -1,0 +1,378 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'cuprum';
+  font-style: normal;
+  font-weight: 200;
+  src: local('cuprum'), local('Cuprum'),
+    url('../fonts/cuprum.woff2') format('woff2'),
+    url('../fonts/cuprum.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('cuprum'), local('Curum'),
+    url('../fonts/cuprum.woff2') format('woff2'),
+    url('../fonts/cuprum.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'cuprum';
+  font-style: normal;
+  font-weight: 700;
+  src: local('cuprum'), local('Cuprum'),
+    url('../fonts/cuprumbold.woff2') format('woff2'),
+    url('../fonts/cuprumbold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT sans';
+  font-style: normal;
+  font-weight: 200;
+  src: local('PT sans'), local('ptsans'),
+    url('../fonts/ptsans.woff2') format('woff2'),
+    url('../fonts/ptsans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT sans'), local('ptsans'),
+    url('../fonts/ptsans.woff2') format('woff2'),
+    url('../fonts/ptsans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT sans'), local('ptsans'),
+    url('../fonts/ptsansbold.woff2') format('woff2'),
+    url('../fonts/ptsansbold.woff') format('woff');
+}
+
+/* Custom properties */
+:root {
+  --basic-white:#fff ;
+  --basic-black:#000;
+  --basic-red:#EE3643;
+  --basic-green:#63A63E;
+  --hover-green:#5FBB2D;
+  --light-green:#8ED78F;
+  --click-green:#518534;
+  --basic-gray:#C5C5C5;
+  --dark-gray:#A9A9A9;
+  --light-gray:#F1F5F7;
+  --basic-biege:#F9F5F0;
+  --dark-biege: #F7F3EC;
+  --orange:#FFBF47;
+  --dark-orange:#FFC047;
+  --light-orange:#FFD180;
+  --sky-blue:#3BBCE3;
+  --dark-blue:#293449;
+  --light-blue:#32425C;
+  --purple:#DC91D8;
+  --transparent-gray:rgba(0, 0, 0, 0.0001);
+  --transparent-gray-2:rgba(0, 0, 0, 0.25);
+  --transparent-white:rgba(255, 255, 255, 0.5);
+}
+
+/* Header */
+
+.header {
+  background-color: var(--transparent-gray);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.top-block {
+  background-color: var(--dark-blue);
+}
+
+.count {
+  color: var(--basic-white);
+  font-family: cuprum, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.order-checkout-button {
+  color: var(--basic-white);
+  font-family: cuprum, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--basic-green);
+}
+
+.promo-text {
+  color: var(--basic-red);
+  font-family: cuprum, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.phone-number {
+  color: var(--basic-red);
+  font-family: cuprum, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.adress {
+  color: var(--light-blue);
+  font-family: cuprum, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.login-button {
+    color: var(--basic-black);
+    font-family: cuprum, sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    background-color: var(--transparent-gray);
+    text-decoration: none;
+}
+
+/* Main menu */
+
+.main-nav {
+  background-color: var(--dark-blue);
+  width: 940px;
+  height: 60px;
+}
+
+.site-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: var(--basic-white);
+  font-family: cuprum, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Features block */
+
+.features-list {
+  list-style: none;
+}
+
+.features-item {
+  color: var(--basic-white);
+  font-family: cuprum, san-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  background-color: var(--basic-gray);
+}
+
+.features-item a {
+  text-decoration: none;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.slider {
+  background-color: var(--basic-gray);
+
+}
+
+.red-button {
+  text-decoration: none;
+  color: var(--basic-white);
+  font-family: cuprum, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 192px;
+  height: 38px;
+  background-color: var(--basic-red);
+}
+
+.figure-title h2 {
+  color: var(--basic-white);
+  font-family: cuprum;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.figure-title p {
+  color: var(--basic-white);
+  font-family: cuprum;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Popular products */
+
+.popular-products-header {
+  width: 940px;
+  height: 89px;
+  background-color: var(--basic-biege);
+}
+
+.blue-heading {
+  color: var(--light-blue);
+  font-family: cuprum, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.popular-products-cards {
+  list-style: none;
+  font-family: PT sans, cuprum, sans-serif;
+}
+
+.product h3 {
+  color: var('--basic-black');
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.old-price {
+  color: #A9A9A9; /* почему-то не подключается кастомное свойство */
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+}
+
+/* Popular brands */
+
+.popular-brands-list {
+  list-style: none;
+}
+
+.popular-brands-header{
+  width: 940px;
+  height: 89px;
+  background-color: var(--basic-biege);
+}
+
+/* Services */
+
+.services {
+  background-color: var(--light-gray);
+}
+
+.black-headling {
+  color: var(--basic-black);
+  font-family: cuprum, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-text {
+  color: var(--basic-black);
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-list li {
+  color: var(--basic-white);
+  font-family: Cuprum;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  background-color: var(--dark-blue);
+}
+
+.services .selected {
+  color: var(--dark-blue);
+  background-color: var(--basic-white);
+}
+
+/* About company */
+
+.transport-company-list {
+  color: var(--basic-black);
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 24px;
+  list-style: none;
+}
+
+/* Footer */
+
+.footer-wrapper {
+  background-color: var(--light-blue);
+}
+
+.footer-adress {
+  color: var(--basic-white);
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    font-family: cuprum, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.top-nav a {
+  color: var(--basic-white);
+}
+
+.bottom-nav a {
+  color: var(--light-orange);
+}
+
+/* Footer bottom block */
+
+.footer-bottom-block {
+  background-color: var(--dark-blue);
+}
+
+.copyright {
+  color: var(--basic-white);
+  font-family: cuprum, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.mail,
+.authors-link {
+  text-decoration: none;
+  color: var(--light-orange);
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 18px;
+}
