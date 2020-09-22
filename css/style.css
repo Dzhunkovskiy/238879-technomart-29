@@ -66,6 +66,7 @@
   --basic-gray:#C5C5C5;
   --dark-gray:#A9A9A9;
   --light-gray:#F1F5F7;
+  --light-gray-2:#F2F6F8;
   --basic-biege:#F9F5F0;
   --dark-biege: #F7F3EC;
   --orange:#FFBF47;
@@ -140,6 +141,20 @@
     background-color: var(--transparent-gray);
     text-decoration: none;
 }
+
+.profile-list {
+  list-style: none;
+}
+
+.profile-list a {
+  color: var(--light-blue);
+  font-family: cuprum, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+
 
 /* Main menu */
 
@@ -220,6 +235,26 @@
   font-family: cuprum;
   font-size: 18px;
   line-height: 24px;
+}
+
+/* Products */
+
+.filter-header {
+  color: var(--dark-blue);
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: var(--light-gray-2)
+}
+
+/* Filter */
+
+.filter p {
+  color: var(--basic-black);
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--basic-biege);
 }
 
 /* Popular products */
@@ -309,6 +344,19 @@
   background-color: var(--basic-white);
 }
 
+/* Pagination */
+
+.breadcrumbs-list a {
+  color: var(--basic-black);
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+}
 /* About company */
 
 .transport-company-list {
