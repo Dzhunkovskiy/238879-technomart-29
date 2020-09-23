@@ -78,7 +78,8 @@
   background-color: var(--dark-blue);
 }
 
-.count {
+.bookmarks-count,
+.cart-count {
   color: var(--basic-white);
   font-family: cuprum, sans-serif;
   font-size: 18px;
@@ -279,7 +280,7 @@
 }
 
 .sorting-buttons {
-  list-style: none; 
+  list-style: none;
 }
 
 .sorting-button {
@@ -472,4 +473,25 @@
   font-family: Cuprum;
   font-size: 16px;
   line-height: 18px;
+}
+
+/* About tool */
+.about-tool {
+  width: 1200px;
+  height: 261px;
+  background-color: var(--light-gray);
+}
+
+.about-tool h2 {
+  color: var(--basic-black);
+  font-family: cuprum, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about-tool p {
+  color: var(--basic-black);
+  font-family: PT sans, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
