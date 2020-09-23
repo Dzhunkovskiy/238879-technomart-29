@@ -20,19 +20,15 @@
             <img class="search-icon" src="some_img.png" alt="иконка поиска"><!--стили(?)-->
           </button>
         </form>
-        <div class="bookmarks">
-          <a class="bookmarks-link" href="">
-            <p class="bookmarks-count">Закладки: 0</p>
-            <img class="bookmarks-icon" src="some_img.png" alt="иконка закладок"><!--стили(?)-->
+          <a class="bookmarks-link header-button" href="">
+            <img class="bookmarks-icon" src="some_img.png" alt="иконка закладок">
+            Закладки: 0
           </a>
-        </div>
-        <div class="cart">
-          <a href="" class="cart-icon">
-            <p class="cart-count">Корзина: 0</p>
-            <img class="cart-icon" src="some_img.png" alt="иконка корзины"><!--стили(?)-->
+          <a href="" class="cart-link header-button">
+            <img class="cart-icon" src="some_img.png" alt="иконка корзины">
+            Корзина: 0
           </a>
-        </div>
-        <button class="order-checkout-button" type="button">Оформить заказ</button>
+        <button class="order-checkout-button header-button" type="button">Оформить заказ</button>
       </div>
       <div class="info-block">
         <div class="promo">
@@ -89,39 +85,39 @@
         </figure>
       </section>
       <section class="popular-products-section">
-        <div class="popular-products-header">
+        <div class="popular-header">
           <h2 class="blue-heading">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
           <a class="red-button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
         </div>
         <ul class="products-cards">
-          <li class="product product-1">
+          <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 9000</h3>
             <span class="old-price">32500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
-          <li class="product product-2">
+          <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 3000</h3>
             <span class="old-price">22500 Р.</span>
             <div class="price">15500 Р.</div>
           </li>
-          <li class="product product-3">
+          <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
-          <li class="product product-4">
+          <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 2000</h3>
             <span class="old-price"></span>
             <div class="price">12500 Р.</div>
           </li>
         </ul>
       </section>
       <section class="popular-brands-section">
-        <div class="popular-brands-header">
+        <div class="popular-header">
           <h2 class="blue-heading">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
           <a class="red-button" href="">ВСЕ ПРОИЗВОДИТЕЛИ</a>
         </div>
@@ -142,9 +138,9 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <ul class="services-list">
-          <li class="selected">Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
+          <li class="services-item services-item-selected">Доставка</li>
+          <li class="services-item">Гарантия</li>
+          <li class="services-item">Кредит</li>
         </ul>
         <div>
           <h2 class="blue-heading">ДОСТАВКА</h2>
@@ -216,9 +212,9 @@
           </p>
           <div class="social">
             <ul class="social-list">
-              <li class="vk"><a href="#"><img src="" width="44" height="44" alt="Вконтакте"></a></li>
-              <li class="fb"><a href="#"><img src="" width="44" height="44" alt="Фейсбук"></a></li>
-              <li class="ig"><a href="#"><img src="" width="44" height="44" alt="Инстаграм"></a></li>
+              <li class="social-item"><a class="social-link social-link-vk" href="#"><img src="" width="44" height="44" alt="Вконтакте"></a></li>
+              <li class="social-item"><a class="social-link social-link-fb" href="#"><img src="" width="44" height="44" alt="Фейсбук"></a></li>
+              <li class="social-item"><a class="social-link social-link-ig" href="#"><img src="" width="44" height="44" alt="Инстаграм"></a></li>
             </ul>
           </div>
           <div class="feedback">

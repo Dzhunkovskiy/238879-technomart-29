@@ -10,7 +10,9 @@
     <header class="header">
       <div class="top-block">
         <div class="header-logo">
-          <img class="logo" src="https://via.placeholder.com/220x47" alt="логотип магазина «Техномарт»" width="220"height="47">
+          <a href="index.html">
+            <img class="logo" src="https://via.placeholder.com/220x47" alt="логотип магазина «Техномарт»" width="220"height="47">
+          </a>
         </div>
         <form class="search">
           <h3 class="hidden">Форма поиска</h3>
@@ -20,19 +22,15 @@
             <img class="search-icon" src="some_img.png" alt="иконка поиска"><!--стили(?)-->
           </button>
         </form>
-        <div class="bookmarks">
-          <a class="bookmarks-link" href="">
-            <p class="bookmarks-count">Закладки: 0</p>
-            <img class="bookmarks-icon" src="some_img.png" alt="иконка закладок"><!--стили(?)-->
+          <a class="bookmarks-link header-button" href="">
+            <img class="bookmarks-icon" src="some_img.png" alt="иконка закладок">
+            Закладки: 0
           </a>
-        </div>
-        <div class="cart">
-          <a href="" class="cart-icon">
-            <p class="cart-count">Корзина: 0</p>
-            <img class="cart-icon" src="some_img.png" alt="иконка корзины"><!--стили(?)-->
+          <a href="" class="cart-link header-button link-active">
+            <img class="cart-icon" src="some_img.png" alt="иконка корзины">
+            Корзина: 10
           </a>
-        </div>
-        <button class="order-checkout-button" type="button">Оформить заказ</button>
+        <button class="order-checkout-button header-button" type="button">Оформить заказ</button>
       </div>
       <div class="info-block">
         <div class="promo">
@@ -41,13 +39,11 @@
           </p>
         </div>
         <div class="contacts-info">
-          <p>
             <a class="phone-number" href="tel:+78125550555" >
             <img class="phone-icon" src="some_img.png" alt="иконка телефона"s>+7 (812) 555-05-55
             </a>
           <p class="adress">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
           </p>
         </div>
       </div>
@@ -77,9 +73,9 @@
       <div class="breadcrumbs">
         <ul class="breadcrumbs-list">
           <li><a href="index.html"><img src="some_img.png" alt="иконка домашней страницы"></a></li>
-          <li><a href="">Каталог</a></li>
-          <li><a href="">Инструменты</a></li>
-          <li><a href="">Перфораторы</a></li>
+          <li><a class="breadcrumb" href="">Каталог</a></li>
+          <li><a class="breadcrumb" href="">Инструменты</a></li>
+          <li><a class="breadcrumb">Перфораторы</a></li>
         </ul>
       </div>
       <div class="filter-header">
@@ -129,65 +125,65 @@
         <ul class="products-cards">
           <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
           <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
           <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
           <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 3000</h3>
             <span class="old-price">22500 Р.</span>
             <div class="price">15500 Р.</div>
           </li>
           <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
           <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 2000</h3>
             <span class="old-price"></span>
             <div class="price">12500 Р.</div>
           </li>
           <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 3000</h3>
             <span class="old-price">22500 Р.</span>
             <div class="price">15500 Р.</div>
           </li>
           <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
           <li class="product">
             <img src="https://via.placeholder.com/184x164" width="184" height="164">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <h3 class="product-headling">Перфоратор BOSCH BFG 2000</h3>
             <span class="old-price"></span>
             <div class="price">12500 Р.</div>
           </li>
         </ul>
         <div class="pagination-wrapper">
           <ul class="pagination-list">
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">СЛЕДУЮЩАЯ</a></li>
+            <li><a class="pagination-link active">1</a></li>
+            <li><a class="pagination-link" href="">2</a></li>
+            <li><a class="pagination-link" href="">3</a></li>
+            <li><a class="pagination-link" href="">СЛЕДУЮЩАЯ</a></li>
           </ul>
         </div>
       </section>
@@ -205,7 +201,9 @@
      <footer class="footer">
       <div class="footer-wrapper">
         <div class="footer-logo">
-          <img class="logo" src="https://via.placeholder.com/220x47" alt="логотип магазина «Техномарт»" width="220"height="47">
+          <a href="index.html">
+            <img class="logo" src="https://via.placeholder.com/220x47" alt="логотип магазина «Техномарт»" width="220"height="47">
+          </a>
         </div>
         <div class="footer-adress">
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -238,9 +236,9 @@
           </p>
           <div class="social">
             <ul class="social-list">
-              <li class="vk"><a href="#"><img src="" width="44" height="44" alt="Вконтакте"></a></li>
-              <li class="fb"><a href="#"><img src="" width="44" height="44" alt="Фейсбук"></a></li>
-              <li class="ig"><a href="#"><img src="" width="44" height="44" alt="Инстаграм"></a></li>
+              <li class="social-item"><a class="social-link social-link-vk" href="#"><img src="" width="44" height="44" alt="Вконтакте"></a></li>
+              <li class="social-item"><a class="social-link social-link-fb" href="#"><img src="" width="44" height="44" alt="Фейсбук"></a></li>
+              <li class="social-item"><a class="social-link social-link-ig" href="#"><img src="" width="44" height="44" alt="Инстаграм"></a></li>
             </ul>
           </div>
           <div class="feedback">
@@ -257,15 +255,5 @@
         </div>
       </div>
     </footer>
-    <div class="modal feedback-form">
-      <h2>Заблудились?</h2>
-      <!-- Здесь будет форма обратной связи (попап)-->
-      <button type="button">Закрыть</button>
-    </div>
-    <div class="modal modal-map">
-      <h2>Как до нас добраться</h2>
-      <!-- Здесь будет карта (попап)-->
-      <button type="button">Закрыть</button>
-    </div>
   </body>
 </html>
