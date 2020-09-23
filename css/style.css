@@ -1,13 +1,5 @@
 /* Fonts */
 
-@font-face {
-  font-family: 'cuprum';
-  font-style: normal;
-  font-weight: 200;
-  src: local('cuprum'), local('Cuprum'),
-    url('../fonts/cuprum.woff2') format('woff2'),
-    url('../fonts/cuprum.woff') format('woff');
-}
 
 @font-face {
   font-family: 'cuprum';
@@ -25,15 +17,6 @@
   src: local('cuprum'), local('Cuprum'),
     url('../fonts/cuprumbold.woff2') format('woff2'),
     url('../fonts/cuprumbold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'PT sans';
-  font-style: normal;
-  font-weight: 200;
-  src: local('PT sans'), local('ptsans'),
-    url('../fonts/ptsans.woff2') format('woff2'),
-    url('../fonts/ptsans.woff') format('woff');
 }
 
 @font-face {
@@ -249,13 +232,68 @@
 
 /* Filter */
 
-.filter p {
+
+.filter-block {
+  color: var(--basic-black);
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.filter {
+  background-color: var(--basic-biege);
+}
+
+.slider-wrapper {
+  width: 220px;
+  height: 80px;
+  background-color: var(--basic-biege);
+}
+
+.slider-price {
+
+}
+
+.price-range {
+  width: 95px;
+  height: 38px;
+  background-color: var(--basic-biege);
+}
+
+
+.brands-selection,
+.power-selectors {
+  list-style: none;
+  text-transform: uppercase;
+  font-family: PT Sans;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.sorting {
   color: var(--basic-black);
   font-family: PT Sans;
   font-size: 13px;
   line-height: 18px;
   background-color: var(--basic-biege);
 }
+
+.sorting-buttons {
+  list-style: none; 
+}
+
+.sorting-button {
+  color: basic-black;
+  opacity: 0.3;
+  border-bottom:1px dashed var(--basic-red);
+}
+
+.sorting-button-active {
+  opacity: 1;
+  color: var(--basic-red);
+  border: none;
+}
+
 
 /* Popular products */
 
@@ -273,7 +311,7 @@
   text-transform: uppercase;
 }
 
-.popular-products-cards {
+.products-cards {
   list-style: none;
   font-family: PT sans, cuprum, sans-serif;
 }
@@ -286,12 +324,23 @@
 }
 
 .old-price {
-  color: #A9A9A9; /* почему-то не подключается кастомное свойство */
+  color: var(--dark-gray);
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
   text-decoration: line-through;
 }
+
+.price {
+  color: var(--basic-white);
+  font-family: PT Sans;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  background-color: var(--basic-red);
+  width: 141px;
+  height: 38px;
+  }
 
 /* Popular brands */
 
