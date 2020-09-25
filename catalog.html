@@ -9,25 +9,24 @@
   <body class="page-body">
     <header class="header">
       <div class="top-block">
-          <a class="header-logo" href="index.html">
-            <img class="logo" src="https://via.placeholder.com/220x47" alt="логотип магазина «Техномарт»" width="220"height="47">
-          </a>
+        <div class="header-logo">
+          <img class="logo" src="img/header-logo.png" alt="логотип магазина «Техномарт»" width="220"height="47">
         </div>
         <form class="search">
           <h3 class="hidden">Форма поиска</h3>
           <!--скрытый заголовок-->
           <!-- Здесь будет форма поиска -->
           <button class="search-button" type="button">
-            <img class="search-icon" src="some_img.png" alt="иконка поиска"><!--стили(?)-->
+            <img class="search-icon" src="img/icon-search.svg" alt="кнопка поиска"><!--стили(?)-->
           </button>
         </form>
           <a class="bookmarks-link header-button" href="">
-            <img class="bookmarks-icon" src="some_img.png" alt="иконка закладок">
+            <img class="bookmarks-icon" src="img/icon-bookmark.svg" alt="кнопка закладок">
             Закладки: 0
           </a>
-          <a href="" class="cart-link header-button link-active">
-            <img class="cart-icon" src="some_img.png" alt="иконка корзины">
-            Корзина: 10
+          <a href="" class="cart-link header-button">
+            <img class="cart-icon" src="img/icon-cart.svg" alt="кнопка корзины">
+            Корзина: 0
           </a>
         <button class="order-checkout-button header-button" type="button">Оформить заказ</button>
       </div>
@@ -38,9 +37,11 @@
           </p>
         </div>
         <div class="contacts-info">
+          <p>
             <a class="phone-number" href="tel:+78125550555" >
-            <img class="phone-icon" src="some_img.png" alt="иконка телефона"s>+7 (812) 555-05-55
+            <img class="phone-icon" src="img/icon-phone.png" alt="кнопка телефона"s>+7 (812) 555-05-55
             </a>
+          </p>
           <p class="adress">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
@@ -48,9 +49,9 @@
       </div>
       <div class="profile">
         <a class="login-button profile-link" href="#">
-          <img class="profile-image" src="some_img.png" alt="иконка пользователя">
+          <img class="profile-image" src="img/icon-user.svg" alt="иконка пользователя">
             Равшан Джамшутович
-           <img src="some_img.png" alt="иконка входа"></a>
+           <img src="img/icon-login.svg" alt="иконка входа"></a>
         <ul class="profile-list">
           <li><a href="#">Мои заказы</a></li>
           <li><a href="#">Личный кабинет</a></li>
@@ -58,13 +59,13 @@
       </div>
       <nav class="main-nav">
         <ul class="site-nav">
-          <li class="menu-item"><a href="index.html">Главная</a></li>
-          <li class="menu-item"><a href="company.html">Компания</a></li>
+          <li class="menu-item"><a href="">Главная</a></li>
+          <li class="menu-item"><a href="">Компания</a></li>
           <li class="menu-item"><a href="#">Каталог</a></li>
-          <li class="menu-item"><a href="news.html">Новости</a></li>
-          <li class="menu-item"><a href="special_offers.html">Спецпредложения</a></li>
-          <li class="menu-item"><a href="delivery.html">Доставка</a></li>
-          <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+          <li class="menu-item"><a href="">Новости</a></li>
+          <li class="menu-item"><a href="">Спецпредложения</a></li>
+          <li class="menu-item"><a href="">Доставка</a></li>
+          <li class="menu-item"><a href="">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -83,8 +84,8 @@
       <div class="filter-block">
         <span class="filter">ФИЛЬТР:</span>
         <h3>ЦЕНА:</h3>
-          <div class="slider-wrapper">
-            <input class="slider-price" type="range" id="price" name="price" min="0" max="40000" width="152">
+          <div class="range-wrapper">
+            <input class="range-price" type="range" id="price" name="price" min="0" max="40000" width="152">
           </div>
           <div class="price-range min">0</div>
           <span>—</span>
@@ -113,65 +114,69 @@
       <div class="sorting">
         <span>СОРТИРОВКА:</span>
         <ul class="sorting-buttons">
-          <li><span class="sorting-button price sorting-button-active">ПО ЦЕНЕ</span></li>
-          <li><span class="sorting-button type">ПО ТИПУ</span></li>
-          <li><span class="sorting-button functionality">ПО ФУНКЦИОНАЛУ</span></li>
-          <li><a href="" class="arrow-up"><!--стрелка вверх--></a></li>
-          <li><a href="" class="arrow-down"><!--стрелка вниз--></a></li>
+          <li><a href="" class="sorting-button price sorting-button-active">ПО ЦЕНЕ</a></li>
+          <li><a href="" class="sorting-button type">ПО ТИПУ</a></li>
+          <li><a href="" class="sorting-button functionality">ПО ФУНКЦИОНАЛУ</a></li>
+          <li><a href="" class="sorting-button arrow-up"><!--стрелка вверх--></a></li>
+          <li><a href="" class="sorting-button arrow-down"><!--стрелка вниз--></a></li>
         </ul>
       </div>
       <section class="products-block">
         <ul class="products-cards">
           <li class="product">
-            <img src="https://via.placeholder.com/184x164" width="184" height="164">
+            <img src="img/product-bosch-bfg6000.jpg" width="184" height="164">
             <h3 class="product-headling">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
           <li class="product">
-            <img src="https://via.placeholder.com/184x164" width="184" height="164">
+            <img src="img/product-bosch-bfg6000.jpg" width="184" height="164">
             <h3 class="product-headling">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
           <li class="product">
-            <img src="https://via.placeholder.com/184x164" width="184" height="164">
+            <img src="img/product-bosch-bfg6000.jpg" width="184" height="164">
+            <img src="img/catalog-new.png" alt="новый продукт" width="70" height="70">
             <h3 class="product-headling">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
           <li class="product">
-            <img src="https://via.placeholder.com/184x164" width="184" height="164">
+            <img src="img/product-bosch-bfg3000.jpg" width="184" height="164">
             <h3 class="product-headling">Перфоратор BOSCH BFG 3000</h3>
             <span class="old-price">22500 Р.</span>
             <div class="price">15500 Р.</div>
           </li>
           <li class="product">
-            <img src="https://via.placeholder.com/184x164" width="184" height="164">
+            <img src="img/product-bosch-bfg6000.jpg" width="184" height="164">
+            <img src="img/catalog-new.png" alt="новый продукт" width="70" height="70">
             <h3 class="product-headling">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
           <li class="product">
-            <img src="https://via.placeholder.com/184x164" width="184" height="164">
+            <img src="img/product-bosch-bfg3000.jpg" width="184" height="164">
             <h3 class="product-headling">Перфоратор BOSCH BFG 2000</h3>
             <span class="old-price"></span>
             <div class="price">12500 Р.</div>
           </li>
           <li class="product">
-            <img src="https://via.placeholder.com/184x164" width="184" height="164">
+            <img src="img/product-bosch-bfg2000.jpg" width="184" height="164">
+            <img src="img/catalog-new.png" alt="новый продукт" width="70" height="70">
             <h3 class="product-headling">Перфоратор BOSCH BFG 3000</h3>
             <span class="old-price">22500 Р.</span>
             <div class="price">15500 Р.</div>
           </li>
           <li class="product">
-            <img src="https://via.placeholder.com/184x164" width="184" height="164">
+            <img src="img/product-bosch-bfg6000.jpg" width="184" height="164">
             <h3 class="product-headling">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
           <li class="product">
-            <img src="https://via.placeholder.com/184x164" width="184" height="164">
+            <img src="img/product-bosch-bfg2000.jpg" width="184" height="164">
+            <img src="img/catalog-new.png" alt="новый продукт" width="70" height="70">
             <h3 class="product-headling">Перфоратор BOSCH BFG 2000</h3>
             <span class="old-price"></span>
             <div class="price">12500 Р.</div>
@@ -197,11 +202,10 @@
         </p>
       </div>
     </main>
-     <footer class="footer">
+    <footer class="footer">
       <div class="footer-wrapper">
-        <a class="footer-logo" href="index.html">
-            <img class="logo" src="https://via.placeholder.com/220x47" alt="логотип магазина «Техномарт»" width="220"height="47">
-        </a>
+        <div class="footer-logo">
+          <img class="logo" src="img/footer-logo.png" alt="логотип магазина «Техномарт»" width="220"height="68">
         </div>
         <div class="footer-adress">
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -234,9 +238,9 @@
           </p>
           <div class="social">
             <ul class="social-list">
-              <li class="social-item"><a class="social-link social-link-vk" href="#"><img src="" width="44" height="44" alt="Вконтакте"></a></li>
-              <li class="social-item"><a class="social-link social-link-fb" href="#"><img src="" width="44" height="44" alt="Фейсбук"></a></li>
-              <li class="social-item"><a class="social-link social-link-ig" href="#"><img src="" width="44" height="44" alt="Инстаграм"></a></li>
+              <li class="social-item"><a class="social-link social-link-vk" href="#"><img src="img/vk-icon.svg" width="44" height="44" alt="Вконтакте"></a></li>
+              <li class="social-item"><a class="social-link social-link-fb" href="#"><img src="img/fb-icon.svg" width="44" height="44" alt="Фейсбук"></a></li>
+              <li class="social-item"><a class="social-link social-link-ig" href="#"><img src="img/ig-icon.svg" width="44" height="44" alt="Инстаграм"></a></li>
             </ul>
           </div>
           <div class="feedback">

@@ -63,6 +63,7 @@
   --transparent-gray: rgba(0, 0, 0, 0.0001);
   --transparent-gray-2: rgba(0, 0, 0, 0.25);
   --transparent-white: rgba(255, 255, 255, 0.5);
+  --transparent-white-2: rgba(255, 255, 255, 0.3);
 }
 
 .page-body {
@@ -187,18 +188,49 @@
   line-height: 30px;
   font-weight: bold;
   background-color: var(--basic-gray);
+  width: 300px;
+  height: 123px;
+  display: flex;
 }
 
-.features-item a {
+.features-item-button {
   text-decoration: none;
   color: var(--basic-white);
   font-size: 14px;
   line-height: 18px;
+  background-color: var(--transparent-white-2);
+  display: block;
+  width: 135px;
+  height: 38px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: -90px;
+}
+
+.materials,
+.delivery {
+  background-color: var(--orange);
+}
+
+.tools {
+  background-color: var(--sky-blue);
+}
+
+.machinery {
+  background-color: var(--purple);
+}
+
+.discounts {
+  background-color: var(--light-green);
 }
 
 .slider {
   background-color: var(--basic-gray);
-
+  width: 620px;
+  height: 266px;
+  margin-bottom: 40px;
+  display: block;
+  background-image: url(../img/slider-photo-1.jpg);
 }
 
 .red-button {
@@ -213,7 +245,7 @@
   background-color: var(--basic-red);
 }
 
-.figure-title h2 {
+.slider-title {
   color: var(--basic-white);
   font-family: 'Cuprum', Arial, sans-serif;
   font-weight: bold;
@@ -222,7 +254,7 @@
   text-transform: uppercase;
 }
 
-.figure-title p {
+.slider p {
   color: var(--basic-white);
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 18px;
@@ -253,15 +285,16 @@
   background-color: var(--basic-biege);
 }
 
-.slider-wrapper {
+.range-wrapper {
   width: 220px;
   height: 80px;
   background-color: var(--basic-biege);
 }
 
-.slider-price {
+.range-price {
 
 }
+
 
 .price-range {
   width: 95px;
@@ -294,6 +327,7 @@
 .sorting-button {
   color: basic-black;
   opacity: 0.3;
+  text-decoration: none;
   border-bottom:1px dashed var(--basic-red);
 }
 
@@ -355,6 +389,12 @@
 
 .popular-brands-list {
   list-style: none;
+}
+
+.brand {
+  display: block;
+  width: 220px;
+  height: 145px;
 }
 
 /* Services */
