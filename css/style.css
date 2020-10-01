@@ -89,6 +89,7 @@
 
 .top-block-container {
   max-width: 940px;
+  margin: 0 auto;
   display: flex;
 }
 
@@ -98,13 +99,14 @@
 
 .logo {
   width: 220px;
-  height: 47px;
-  margin-left: 130px;
+  height: 47px;  
   margin-right: 19px;
 }
 
 .search {
-
+  display: flex;
+  max-height: 20px;
+  margin-top: 9px;
 }
 
 .search-icon {
@@ -119,6 +121,32 @@
   color: var(--basic-white);
   font-size: 18px;
   line-height: 24px;
+  margin-right: 5px;
+}
+
+.search-input {
+  padding: 0;
+  margin-top: 5px;
+  border: 0;
+  border: none;
+  background: 0;
+  color: var(--basic-white);
+  outline:none;
+  width: 190px;
+}
+
+.bookmarks-icon,
+.cart-icon {  
+  margin-right: 9px;
+  margin-bottom: 3px;
+}
+
+.bookmarks-link {
+  margin-right: 50px;
+}
+
+.cart-link {
+  margin-right: 26px;
 }
 
 .header-button {
@@ -126,10 +154,11 @@
   font-family: 'Cuprum' ,Arial , sans-serif;
   font-size: 18px;
   line-height: 24px;
-  text-decoration: none;
-  display: inline-block;
-  width: 136px;
+  text-decoration: none;    
   height: 42px;
+  display: flex;
+  align-items: center;
+  align-self: start;
 }
 
 .link-active {
@@ -140,8 +169,11 @@
   background-color: var(--basic-green);
   border: none;
   width: 150px;
-  height: 42px;
+  height: 42px;  
+  justify-content: space-around;
 }
+
+/* Promo, adress, login */
 
 .info-login-wrapper {
   max-width: 940px;
@@ -155,12 +187,14 @@
   font-family: 'Cuprum' ,Arial , sans-serif;
   font-size: 16px;
   line-height: 23px;
+  margin-left: 31px;
+  margin-top: 42px;
 }
 
 .phone-number-wrapper {
   border: 2px solid var(--basic-white);
   width: 270px;
-  height: 45px;
+  margin-top: 46px;
 }
 
 .phone-number {
@@ -170,10 +204,12 @@
   line-height: 30px;
   font-weight: bold;
   text-decoration: none;
+
 }
 
 .phone-icon {
   margin-right: 17px;
+  margin-left: 40px;
 }
 
 .adress {
@@ -181,17 +217,26 @@
   font-family: 'Cuprum' ,Arial , sans-serif;
   font-size: 14px;
   line-height: 24px;
-  text-align: left;
+  text-align: center;
+}
+
+.sign-login-block {
+  min-width: 252px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .login-button {
-    color: var(--basic-black);
-    font-family: 'Cuprum' ,Arial , sans-serif;
-    font-size: 21px;
-    line-height: 21px;
-    background-color: var(--basic-white);
-    text-decoration: none;
-    display: inline-block;
+  color: var(--basic-black);
+  font-family: 'Cuprum' ,Arial , sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-white);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 46px;
+  width: 121px;
+  height: 45px;
 }
 
 .profile-list {
@@ -218,18 +263,19 @@
   background-color: var(--dark-blue);
   height: 60px;
   max-width: 940px;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 
 .site-nav {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: auto;
+  padding: 16px 0 20px;
+  margin: 0 53px;
 }
 
 .menu-item {
-  padding: 16px 56px 20px 53px;
+  
 }
 
 .menu-item a {
