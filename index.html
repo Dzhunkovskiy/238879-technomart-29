@@ -11,14 +11,14 @@
       <div class="top-block">
         <div class="top-block-container">
           <div class="header-logo">
-            <img class="logo" src="img/header-logo.png" alt="логотип магазина «Техномарт»" width="220"height="47">
+            <img class="logo" src="img/header-logo.svg" alt="логотип магазина «Техномарт»" width="220"height="47">
           </div>
           <a class="search-button" href="">
             <img class="search-icon" src="img/icon-search.svg" alt="кнопка поиска">
           </a>
           <form class="search">
               <label class="search-label" for="search">Поиск:</label>
-              <input class="search-input" type="text" id="search" name="search">            
+              <input class="search-input" type="text" id="search" name="search">
           </form>
           <a class="bookmarks-link header-button" href="">
           <img class="bookmarks-icon" src="img/icon-bookmark.svg" alt="кнопка закладок">
@@ -50,7 +50,8 @@
         <div class="sign-login-block">
           <!--Вход и регистрация-->
           <a class="login-button" href="#">
-            <img class="login-icon" src="img/icon-login.svg" alt="иконка входа"><!--стили(?)-->Войти
+            <img class="login-icon" src="img/icon-login.svg" alt="иконка входа">
+            Войти
           </a>
           <a class="login-button" href="#">Регистрация</a>
         </div>
@@ -71,26 +72,26 @@
     <main class="main-container">
       <div class="features-wrapper">
         <section class="features">
-          <div class="features-item materials">Материалы
+          <div class="features-item materials"><h3>Материалы</h3>
             <a class="features-item-button" href="">НА ЛЮБОЙ ВКУС</a>
-            <img src="img/icon-bucket.png" alt="" width="44" height="65">
-            <img src="img/catalog-new.png" alt="новый продукт" width="70" height="70">
+            <img class="features-image" src="img/icon-bucket.png" alt="" width="44" height="65">
+            <img class="features-new" src="img/catalog-new.png" alt="новый продукт" width="70" height="70">
           </div>
-          <div class="features-item tools">Инструмент
+          <div class="features-item tools"><h3>Инструмент</h3>
             <a class="features-item-button" href="">НА ВСЕ СЛУЧАИ</a>
-            <img src="img/icon-drill.png" alt="" width="75" height="61">
+            <img class="features-image" src="img/icon-drill.png" alt="" width="75" height="61">
           </div>
-          <div class="features-item machinery">Техника
+          <div class="features-item machinery"><h3>Техника</h3>
             <a class="features-item-button" href="">ДЛЯ СТРОЙКИ</a>
-            <img src="img/icon-tractor.png" alt="" width="78" height="62">
+            <img class="features-image" src="img/icon-tractor.png" alt="" width="78" height="62">
           </div>
-          <div class="features-item discounts">Скидки
+          <div class="features-item discounts"><h3>Скидки</h3>
             <a class="features-item-button" href="">НА 350 ТОВАРОВ</a>
-            <img src="img/icon-full-cart.png" alt="" width="59" height="72">
+            <img class="features-image" rc="img/icon-full-cart.png" alt="" width="59" height="72">
           </div>
-          <div class="features-item delivery">Доставка
+          <div class="features-item delivery"><h3>Доставка</h3>
             <a class="features-item-button" href="">БЕСПЛАТНО</a>
-            <img src="img/icon-delivery-car.png" alt="" width="78" height="63">
+            <img class="features-image" src="img/icon-delivery-car.png" alt="" width="78" height="63">
           </div>
           <div class="slider">
             <h2 class="slider-title">ПЕРФОРАТОРЫ</h2>
@@ -164,22 +165,22 @@
               <li class="services-item">Гарантия</li>
               <li class="services-item">Кредит</li>
             </ul>
-            <div class="service-description">
-              <h2 class="blue-heading">ДОСТАВКА</h2>
-              <p class="services-text">Мы с удовольствие доставим ваш товар прямо <br>
-                к вашему подъезду совершенно бесплатно! <br>
-                Ведь мы не плохо заработаем, <br>
-                поднимая его на ваш этаж!
-              </p>
-              <img src="img/services-delivery-icon.png" alt="" width="468" height="261">
-            </div>
           </div>
+          <div class="service-description">
+            <h2 class="blue-heading">ДОСТАВКА</h2>
+            <p class="services-text">Мы с удовольствие доставим ваш товар прямо <br>
+              к вашему подъезду совершенно бесплатно! <br>
+              Ведь мы не плохо заработаем, <br>
+              поднимая его на ваш этаж!
+            </p>
+          </div>
+            <img class="services-image" src="img/services-delivery-icon.png" alt="" width="468" height="261">
         </div>
       </section>
       <div class="about-company-wrapper">
         <section class="about-company">
           <h2 class="black-heading">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
-          <div class="services-text">
+          <div class="services-text about-company-text">
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
               ремонта и строительства не оставит равнодушными любителей сэкономить на <br>
               гастарбайтерах.
@@ -187,13 +188,14 @@
             <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>
               Техномарт работает со многими транспортными компаниями:
             </p>
-          </div>
+
           <ul class="transport-company-list">
-            <li>Деловые линиии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+            <li><span>— </span>Деловые линиии</li>
+            <li><span>— </span>Автотрейдинг</li>
+            <li><span>— </span>ЖелДорЭкспедиция</li>
           </ul>
           <a class="red-button" href="">ПОДРОБНЕЕ О КОМПАНИИ</a>
+          </div>
         </section>
         <section class="contacts">
           <h2 class="black-heading">КОНТАКТЫ</h2>
@@ -205,15 +207,11 @@
     </main>
     <footer class="footer">
       <div class="footer-wrapper">
-        <div class="footer-logo">
-          <img class="logo" src="img/footer-logo.png" alt="логотип магазина «Техномарт»" width="220"height="68">
-        </div>
+        <img class="footer-logo" src="img/footer-logo.svg" alt="логотип магазина «Техномарт»" width="220"height="68">
         <div class="footer-adress">
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>+7 (812) 555-05-55</p>
         </div>
-        <nav class="footer-nav-block">
-          <div class="footer-nav-main">
             <ul class="footer-nav top-nav">
               <li><a href="">Компания</a></li>
               <li><a href="">Новости</a></li>
@@ -221,16 +219,12 @@
               <li><a href="">Доставка</a></li>
               <li><a href="">Контакты</a></li>
             </ul>
-          </div>
-          <div class="footer-nav-addition">
             <ul class="footer-nav bottom-nav">
               <li><a href="">Материалы</a></li>
               <li><a href="">Техника</a></li>
               <li><a href="">Инструмент</a></li>
               <li><a href="">Спецпредложения</a></li>
             </ul>
-          </div>
-        </nav>
       <div class="footer-bottom-block">
         <div class="copyright">
           <p>&copy; 2010-2019 Компания «Техномарт» <br>
