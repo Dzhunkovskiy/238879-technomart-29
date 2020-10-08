@@ -13,10 +13,8 @@
           <div class="header-logo">
             <img class="logo" src="img/header-logo.svg" alt="логотип магазина «Техномарт»" width="220"height="47">
           </div>
-          <a class="search-button" href="">
-            <img class="search-icon" src="img/icon-search.svg" alt="кнопка поиска">
-          </a>
           <form class="search">
+            <button class="search-button" type="submit"></button>
               <label class="search-label" for="search">Поиск:</label>
               <input class="search-input" type="text" id="search" name="search">
           </form>
@@ -72,39 +70,33 @@
     <main class="main-container">
       <div class="features-wrapper">
         <section class="features">
-          <div class="features-item materials"><h3>Материалы</h3>
-            <a class="features-item-button" href="">НА ЛЮБОЙ ВКУС</a>
-            <img class="features-image" src="img/icon-bucket.png" alt="" width="44" height="65">
-            <img class="features-new" src="img/catalog-new.png" alt="новый продукт" width="70" height="70">
+          <div class="features-item materials new-feature-flag"><h3>Материалы</h3>
+            <a class="features-item-button" href="">на любой вкус</a>
           </div>
           <div class="features-item tools"><h3>Инструмент</h3>
-            <a class="features-item-button" href="">НА ВСЕ СЛУЧАИ</a>
-            <img class="features-image" src="img/icon-drill.png" alt="" width="75" height="61">
+            <a class="features-item-button" href="">на все случаи</a>
           </div>
           <div class="features-item machinery"><h3>Техника</h3>
-            <a class="features-item-button" href="">ДЛЯ СТРОЙКИ</a>
-            <img class="features-image" src="img/icon-tractor.png" alt="" width="78" height="62">
+            <a class="features-item-button" href="">для стройки</a>
           </div>
-          <div class="features-item discounts"><h3>Скидки</h3>
-            <a class="features-item-button" href="">НА 350 ТОВАРОВ</a>
-            <img class="features-image" rc="img/icon-full-cart.png" alt="" width="59" height="72">
+          <div class="features-item discounts"><h3>Скидки 50%</h3>
+            <a class="features-item-button" href="">на 350 товаров</a>
           </div>
           <div class="features-item delivery"><h3>Доставка</h3>
-            <a class="features-item-button" href="">БЕСПЛАТНО</a>
-            <img class="features-image" src="img/icon-delivery-car.png" alt="" width="78" height="63">
+            <a class="features-item-button" href="">бесплатно</a>
           </div>
           <div class="slider">
-            <h2 class="slider-title">ПЕРФОРАТОРЫ</h2>
+            <h2 class="slider-title">перфораторы</h2>
             <p>Настоящие мужские игрушки</p>
-            <a class="red-button" href="catalog.html">открыть каталог</a>
-            <!--<img src="img/slider-photo-1.jpg" alt="">-->
+            <a class="red-button slider-button" href="catalog.html">открыть каталог</a>
+            <img src="img/slider-photo-1.jpg" alt="">
           </div>
         </div>
       </section>
       <section class="popular-products-section">
         <div class="popular-header">
           <h2 class="blue-heading">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-          <a class="red-button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+          <a class="red-button popular-button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
         </div>
         <ul class="products-cards">
           <li class="product-card">
@@ -113,9 +105,8 @@
             <span class="old-price">32500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
-          <li class="product-card">
-            <img class="product-image" src="img/product-bosch-bfg3000.jpg" width="184" height="164">
-            <img class="new" src="img/catalog-new.png" alt="новый продукт" width="70" height="70">
+          <li class="product-card  new-product">
+            <img class="product-image" src="img/product-bosch-bfg3000.jpg" width="127" height="112">
             <h3 class="product-heading">Перфоратор BOSCH BFG 3000</h3>
             <span class="old-price">22500 Р.</span>
             <div class="price">15500 Р.</div>
@@ -126,11 +117,10 @@
             <span class="old-price">30500 Р.</span>
             <div class="price">25500 Р.</div>
           </li>
-          <li class="product-card">
-            <img class="product-image" src="img/product-bosch-bfg2000.jpg" width="184" height="164">
-            <img class="new" src="img/catalog-new.png" alt="новый продукт" width="70" height="70">
+          <li class="product-card  new-product">
+            <img class="product-image" src="img/product-bosch-bfg2000.jpg" width="144" height="128">
             <h3 class="product-heading">Перфоратор BOSCH BFG 2000</h3>
-            <span class="old-price"></span>
+            <span class="old-price hidden">none</span>
             <div class="price">12500 Р.</div>
           </li>
         </ul>
@@ -138,7 +128,7 @@
       <section class="popular-brands-section">
         <div class="popular-header">
           <h2 class="blue-heading">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-          <a class="red-button" href="">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+          <a class="red-button popular-button" href="">ВСЕ ПРОИЗВОДИТЕЛИ</a>
         </div>
         <div class="popular-brands">
           <a class="brand" href="#"><img src="img/brand-bosch.png" alt="bosch" width="220" height="145"></a>
@@ -167,7 +157,7 @@
             </ul>
           </div>
           <div class="service-description">
-            <h2 class="blue-heading">ДОСТАВКА</h2>
+            <h2 class="blue-heading">доставка</h2>
             <p class="services-text">Мы с удовольствие доставим ваш товар прямо <br>
               к вашему подъезду совершенно бесплатно! <br>
               Ведь мы не плохо заработаем, <br>
@@ -190,9 +180,9 @@
             </p>
 
           <ul class="transport-company-list">
-            <li><span>— </span>Деловые линиии</li>
-            <li><span>— </span>Автотрейдинг</li>
-            <li><span>— </span>ЖелДорЭкспедиция</li>
+            <li class="transport-list-item">Деловые линиии</li>
+            <li class="transport-list-item">Автотрейдинг</li>
+            <li class="transport-list-item">ЖелДорЭкспедиция</li>
           </ul>
           <a class="red-button" href="">ПОДРОБНЕЕ О КОМПАНИИ</a>
           </div>
