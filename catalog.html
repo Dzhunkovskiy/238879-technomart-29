@@ -13,11 +13,13 @@
           <a href="index.html" class="header-logo">
             <img class="logo" src="img/header-logo.svg" alt="логотип магазина «Техномарт»" width="220"height="47">
           </a>
-          <form class="search">
-            <button class="search-button" type="submit"></button>
-            <label class="search-label" for="search">Поиск:</label>
-            <input class="search-input" type="text" id="search" name="search">
-          </form>
+          <div class="search-wrapper">
+            <form class="search">
+              <button class="search-button" type="submit"></button>
+              <label class="search-label" for="search">Поиск:</label>
+              <input class="search-input" type="text" id="search" name="search">
+            </form>
+          </div>
           <a class="bookmarks-link header-button" href="">
           <img class="bookmarks-icon" src="img/icon-bookmark.svg" alt="кнопка закладок">
           <span>Закладки: 0</span>
@@ -38,7 +40,7 @@
         <div class="contacts-info">
           <div class="phone-number-wrapper">
             <a class="phone-number" href="tel:+78125550555" >
-            <img class="phone-icon" src="img/icon-phone.png" alt="кнопка телефона"s>+7 (812) 555-05-55
+            <img class="phone-icon" src="img/icon-phone.svg" alt="кнопка телефона"s>+7 (812) 555-05-55
             </a>
             </div class="phone-number-wrapper">
             <p class="adress">
@@ -48,8 +50,8 @@
           <div class="sign-login-block">
             <a class="login-button profile-link" href="#">
             <img class="profile-image" src="img/icon-user.svg" alt="иконка пользователя">
-            Равшан Джамшутович
-            <img src="img/icon-login.svg" alt="иконка входа"></a>
+            <span class="user-name">Равшан Джамшутович</span>
+            <img class="logout-icon" src="img/icon-logout.svg" alt="иконка выхода"></a>
             <ul class="profile-nav-list">
               <li class="profile-nav-item"><a href="#">Мои заказы</a></li>
               <li class="profile-nav-item"><a href="#">Личный кабинет</a></li>
@@ -86,7 +88,7 @@
           <span class="filter-name">фильтр:</span>
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="price-selection">
-              <legend>Цена:</legend>
+              <legend class="range-legend">Цена:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -109,7 +111,7 @@
             </fieldset>
           </form>
           <fieldset class="brands-selection">
-            <legend>Производители:</legend>
+            <legend class="brands-legend">Производители:</legend>
             <ul class="brands-selectors">
               <li class="brands-option">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch" id="filter-bosch" checked="checked">
@@ -134,7 +136,7 @@
             </ul>
           </fieldset>
           <fieldset class="power-selection">
-            <legend>Питание:</legend>
+            <legend class="power-legend">Питание:</legend>
             <ul class="power-selectors">
               <li class="power-option">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power" id="filter-battery" checked="checked">
@@ -145,8 +147,8 @@
                 <label for="filter-power-plug">сетевые</label>
               </li>
             </ul>
-            <button class="show-button" type="button">показать</button>
           </fieldset>
+          <button class="show-button" type="button">показать</button>
         </section>
         <div class="sorting">
           <span>сортировка:</span>
@@ -241,10 +243,10 @@
           </ul>
           <div class="pagination-wrapper">
             <ul class="pagination-list">
-              <li><a class="pagination-link active">1</a></li>
-              <li><a class="pagination-link" href="">2</a></li>
-              <li><a class="pagination-link" href="">3</a></li>
-              <li><a class="pagination-link" href="">Следующая</a></li>
+              <li class="pagination-item"><a class="pagination-link active">1</a></li>
+              <li class="pagination-item"><a class="pagination-link" href="">2</a></li>
+              <li class="pagination-item"><a class="pagination-link" href="">3</a></li>
+              <li class="pagination-item"><a class="pagination-link" href="">Следующая</a></li>
             </ul>
           </div>
         </section>
