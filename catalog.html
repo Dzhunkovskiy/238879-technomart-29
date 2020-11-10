@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="./css/normalize.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="header">
@@ -15,24 +15,26 @@
           </a>
           <div class="search-wrapper">
             <form class="search">
-              <a class="search-button" href="">
+              <button class="search-button" type="submit">
                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
                 </svg>
-              </a>
+              </button>
               <label class="search-label" for="search">Поиск:</label>
               <input class="search-input" type="text" id="search" name="search">
             </form>
           </div>
           <a class="bookmarks-link header-button" href="">
           <img class="bookmarks-icon" src="img/icon-bookmark.svg" alt="кнопка закладок">
-          <span>Закладки: 0</span>
+          Закладки: 0
           </a>
           <a href="" class="cart-link header-button active">
           <img class="cart-icon" src="img/icon-cart.svg" alt="кнопка корзины">
-          <span>Корзина: 10</span>
+          Корзина: 10
           </a>
-          <a class="order-checkout-button header-button" href=""><span>Оформить заказ</span></a>
+          <a class="order-checkout-button header-button" href="">
+            Оформить заказ
+          </a>
         </div>
       </div>
       <div class="info-login-wrapper">
@@ -44,7 +46,7 @@
         <div class="contacts-info">
           <div class="phone-number-wrapper">
             <a class="phone-number" href="tel:+78125550555" >
-            <img class="phone-icon" src="img/icon-phone.svg" alt="кнопка телефона">+7 (812) 555-05-55
+            +7 (812) 555-05-55
             </a>
           </div>
           <p class="adress">
@@ -52,13 +54,20 @@
           </p>
         </div>
         <div class="sign-login-block">
-          <a class="login-button profile-link" href="#">
-          <img class="profile-image" src="img/icon-user.svg" alt="иконка пользователя">
-          <span class="user-name">Равшан Джамшутович</span>
-          <img class="logout-icon" src="img/icon-logout.svg" alt="иконка выхода"></a>
+          <a class="profile-link" href="#">
+            <img class="profile-icon" src="img/icon-user.svg" alt="иконка пользователя">
+          </a>
+          <a class="user-name login-button" href="#">Равшан Джамшутович</a>
+          <a class="logout-link" href="#">
+            <img class="logout-icon" src="img/icon-logout.svg" alt="иконка выхода">
+          </a>
           <ul class="profile-nav-list">
-            <li class="profile-nav-item"><a href="#">Мои заказы</a></li>
-            <li class="profile-nav-item"><a href="#">Личный кабинет</a></li>
+            <li class="profile-nav-item">
+              <a href="#">Мои заказы</a>
+            </li>
+            <li class="profile-nav-item">
+              <a href="#">Личный кабинет</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -113,7 +122,6 @@
                 </div>
               </div>
             </fieldset>
-          </form>
           <fieldset class="brands-selection">
             <legend class="brands-legend">Производители:</legend>
             <ul class="brands-selectors">
@@ -152,7 +160,8 @@
               </li>
             </ul>
           </fieldset>
-          <button class="show-button" type="submit" action="https://echo.htmlacademy.ru">показать</button>
+          <button class="show-button" type="submit">показать</button>
+          </form>
         </section>
         <div class="sorting">
           <span>сортировка:</span>
@@ -174,8 +183,8 @@
           <ul class="products-cards">
             <li class="product-card">
               <div class="buy-block">
-                <button type="button" class="card-button buy-button">купить</button>
-                <button type="button" class="card-button add-bookmark-button">в закладки</button>
+                <a href="#" class="card-button buy-button">купить</a>
+                <a href="#" class="card-button add-bookmark-button">в закладки</a>
               </div>
               <div class="product-image-wrapper">
                 <img class="product-image" src="img/product-bosch-bfg6000.jpg" width="144" height="128" alt="перфоратор bosch bfg 6000">
@@ -186,8 +195,8 @@
             </li>
             <li class="product-card">
               <div class="buy-block">
-                <button type="button" class="card-button buy-button">купить</button>
-                <button type="button" class="card-button add-bookmark-button">в закладки</button>
+                <a href="#" class="card-button buy-button">купить</a>
+                <a href="#" class="card-button add-bookmark-button">в закладки</a>
               </div>
               <div class="product-image-wrapper">
                 <img class="product-image" src="img/product-bosch-bfg6000.jpg" width="144" height="128" alt="перфоратор bosch bfg 6000">
@@ -196,10 +205,10 @@
               <span class="old-price">30500 Р.</span>
               <div class="price">25500 Р.</div>
             </li>
-            <li class="product-card">
+            <li class="product-card new-product">
               <div class="buy-block">
-                <button type="button" class="card-button buy-button">купить</button>
-                <button type="button" class="card-button add-bookmark-button">в закладки</button>
+                <a href="#" class="card-button buy-button">купить</a>
+                <a href="#" class="card-button add-bookmark-button">в закладки</a>
               </div>
               <div class="product-image-wrapper">
                 <img class="product-image" src="img/product-bosch-bfg6000.jpg" width="144" height="128" alt="перфоратор bosch bfg 6000">
@@ -210,8 +219,8 @@
             </li>
             <li class="product-card  new-product">
               <div class="buy-block">
-                <button type="button" class="card-button buy-button">купить</button>
-                <button type="button" class="card-button add-bookmark-button">в закладки</button>
+                <a href="#" class="card-button buy-button">купить</a>
+                <a href="#" class="card-button add-bookmark-button">в закладки</a>
               </div>
               <div class="product-image-wrapper">
                 <img class="product-image" src="img/product-bosch-bfg3000.jpg" width="127" height="112" alt="перфоратор bosch bfg 3000">
@@ -222,8 +231,8 @@
             </li>
             <li class="product-card">
               <div class="buy-block">
-                <button type="button" class="card-button buy-button">купить</button>
-                <button type="button" class="card-button add-bookmark-button">в закладки</button>
+                <a href="#" class="card-button buy-button">купить</a>
+                <a href="#" class="card-button add-bookmark-button">в закладки</a>
               </div>
               <div class="product-image-wrapper">
                 <img class="product-image" src="img/product-bosch-bfg6000.jpg" width="144" height="128" alt="перфоратор bosch bfg 6000">
@@ -234,8 +243,8 @@
             </li>
             <li class="product-card  new-product">
               <div class="buy-block">
-                <button type="button" class="card-button buy-button">купить</button>
-                <button type="button" class="card-button add-bookmark-button">в закладки</button>
+                <a href="#" class="card-button buy-button">купить</a>
+                <a href="#" class="card-button add-bookmark-button">в закладки</a>
               </div>
               <div class="product-image-wrapper">
                 <img class="product-image" src="img/product-bosch-bfg2000.jpg" width="127" height="112" alt="перфоратор bosch bfg 2000">
@@ -246,8 +255,8 @@
             </li>
             <li class="product-card  new-product">
               <div class="buy-block">
-                <button type="button" class="card-button buy-button">купить</button>
-                <button type="button" class="card-button add-bookmark-button">в закладки</button>
+                <a href="#" class="card-button buy-button">купить</a>
+                <a href="#" class="card-button add-bookmark-button">в закладки</a>
               </div>
               <div class="product-image-wrapper">
                 <img class="product-image" src="img/product-bosch-bfg3000.jpg" width="127" height="112" alt="перфоратор bosch bfg 3000">
@@ -258,8 +267,8 @@
             </li>
             <li class="product-card">
               <div class="buy-block">
-                <button type="button" class="card-button buy-button">купить</button>
-                <button type="button" class="card-button add-bookmark-button">в закладки</button>
+                <a href="#" class="card-button buy-button">купить</a>
+                <a href="#" class="card-button add-bookmark-button">в закладки</a>
               </div>
               <div class="product-image-wrapper">
                 <img class="product-image" src="img/product-bosch-bfg6000.jpg" width="144" height="128" alt="перфоратор bosch bfg 6000">
@@ -270,8 +279,8 @@
             </li>
             <li class="product-card  new-product">
               <div class="buy-block">
-                <button type="button" class="card-button buy-button">купить</button>
-                <button type="button" class="card-button add-bookmark-button">в закладки</button>
+                <a href="#" class="card-button buy-button">купить</a>
+                <a href="#" class="card-button add-bookmark-button">в закладки</a>
               </div>
               <div class="product-image-wrapper">
                 <img class="product-image" src="img/product-bosch-bfg2000.jpg" width="127" height="112" alt="перфоратор bosch bfg 2000">
@@ -393,5 +402,6 @@
       <button class="modal-close close-cart-modal" type="button" aria-label="Закрыть"></button>
     </div>
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

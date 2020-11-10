@@ -159,7 +159,7 @@
 
 .search {
   width: 271px;
-  height: 42px;  
+  height: 42px;
   display: flex;
   padding-left: 17px;
 }
@@ -167,10 +167,12 @@
 .search-button {
   width: 17px;
   height: 17px;
+  padding: 0;
   align-self: center;
   margin-right: 8px;
   border: none;
-  background-color: transparent
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .search-button svg {
@@ -306,7 +308,9 @@
   margin-left: 22px;
   margin-bottom: 8px;
   margin-top: 8px;
-  padding: 6px 0;
+  padding: 7px 0;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .phone-number {
@@ -317,12 +321,17 @@
   margin: 5px 0;
   font-weight: bold;
   text-decoration: none;
+  padding-left: 74px;
 }
 
-.phone-icon {
-  margin-right: 17px;
-  margin-left: 37px;
-  vertical-align: middle;
+.phone-number-wrapper::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/icon-phone.svg);
+  width: 18px;
+  height: 19px;
+  top: 10px;
+  left: 38px;
 }
 
 .adress {
@@ -343,6 +352,7 @@
   max-width: 300px;
   align-self: flex-start;
   margin-top: 45px;
+  position: relative;
 }
 
 .login-button {
@@ -359,21 +369,24 @@
   margin-bottom: 7px;
 }
 
-.profile-link {
-  position: relative;
+.user-name{
   min-width: 300px;
   text-align: center;
   padding: 0;
 }
 
-.profile-image {
+.profile-icon {
   position: absolute;
-  top: 12px;
-  left: 16px;
+  top: 13px;
+  left: 15px;
+}
+
+.profile-icon,
+.logout-icon {
   opacity: 0.4;
 }
 
-.login-icon {  
+.login-icon {
   opacity: 0.4;
 }
 
@@ -386,7 +399,7 @@
 
 .logout-icon:hover,
 .login-icon:hover,
-.profile-image:hover {
+.profile-icon:hover {
   opacity: 1;
 }
 
@@ -423,6 +436,31 @@
   text-decoration: none;
 }
 
+.profile-nav-item a:hover {
+  color: var(--basic-red);
+}
+
+.login-button:hover {
+  color: var(--basic-red);
+}
+
+.user-name:hover {
+  color: var(--basic-black);
+}
+
+.login-button:focus,
+.logout-link:focus,
+.login-link:focus,
+.profile-link:focus, {
+  opacity: 0.3;
+}
+
+.profile-nav-item a:focus {
+  color: var(--light-blue);
+  opacity: 0.3;
+}
+
+
 /* Main menu */
 
 .main-nav {
@@ -453,12 +491,12 @@
 }
 
 .menu-item:hover {
-  background-color: var(--dark-blue);  
+  background-color: var(--dark-blue);
   box-shadow: inset 0px -5px 0px #293449;
 }
 
-.menu-item:hover {  
-  background-color: #1D2739;  
+.menu-item:hover {
+  background-color: #1D2739;
   box-shadow: inset 0px -5px 0px #293449;
 }
 
@@ -690,7 +728,7 @@
   margin-top: 23px;
 }
 
-.slider p {
+.slider-description {
   color: var(--basic-white);
   font-family: 'Cuprum', 'PT sans', sans-serif;
   font-size: 18px;
@@ -864,7 +902,7 @@
   display: block;
   text-transform: uppercase;
   cursor: pointer;
-  user-select: none;  
+  user-select: none;
 }
 
 .filter-input-checkbox + label::before {
@@ -1081,12 +1119,16 @@
 .sorting-button:hover {
   opacity: 1;
   border-bottom:1px solid var(--basic-red);
-} 
+}
 
 .sorting-button-active {
   opacity: 1;
   color: var(--basic-red);
   border: none;
+}
+
+.sorting-button-active:hover {
+  color: var(--basic-black);
 }
 
 .sorting-button-type {
@@ -1109,7 +1151,7 @@
 }
 
 .arrow:hover path {
-  fill: var(--basic-red);
+  fill: var(--basic-black);
 }
 
 .arrow-active path {
@@ -1193,7 +1235,7 @@
   justify-content: center;
   outline: 1px solid var(--border-gray);
   word-wrap: break-word;
-  cursor: pointer;    
+  cursor: pointer;
   overflow: hidden;
 }
 
@@ -1217,7 +1259,7 @@
 
 .product-card:hover .buy-block {
   transform: translateY(171px);
-} 
+}
 
 .card-button {
   width: 135px;
@@ -1228,8 +1270,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   border-radius: 2px;
+  text-decoration: none;
+  box-sizing: border-box;
   cursor: pointer;
 }
 
@@ -1274,7 +1318,6 @@
   box-shadow: inset 0 0 0 3px #32425C;
   opacity: 0.5;
 }
-
 
 .product-image-wrapper {
   min-width: 200px;
@@ -1496,10 +1539,25 @@
   grid-column-end: 3;
   z-index: 1;
   min-height: 310px;
+  margin-top: 26px;
+}
+
+.service-description-delivery {
   background-image: url(../img/services-delivery-icon.png);
   background-repeat: no-repeat;
   background-position: 100% 100%;
-  margin-top: 26px;
+}
+
+.service-description-warranty {
+  background-image: url(../img/services-warranty-icon.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.service-description-credit {
+  background-image: url(../img/services-credit-icon.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .services-item {
@@ -1597,18 +1655,20 @@
 
 .page-active {
   color: var(--basic-white);
-  background-color: var(--basic-red);  
+  background-color: var(--basic-red);
   border: 1px solid var(--basic-red);
 }
 
 .pagination-link:hover,
 .show-button:hover {
-  border: 1px solid var(--basic-gray);
+  outline: 1px solid var(--basic-gray);
+  outline-offset: -1px;
 }
 
 .pagination-link:focus,
 .show-button:focus {
-  border: 1px solid var(--basic-red);
+  outline: 1px solid var(--basic-red);
+  outline-offset: -1px;
 }
 
 /* About company */
@@ -2100,8 +2160,23 @@
   color: var(--basic-black);
   margin-left: 0;
   margin-right: 0;
+  cursor: pointer;
+}
+
+.modal-cart-button:last-child:hover {
+  outline: 1px solid var(--basic-gray);
+  outline-offset: -1px;
+}
+
+.modal-cart-button:last-child:focus {
+  outline: 1px solid var(--basic-red);
+  outline-offset: -1px;
 }
 
 .modal-show {
   display: block;
+}
+
+.slide-hidden {
+  display: none;
 }
