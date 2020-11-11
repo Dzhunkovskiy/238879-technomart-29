@@ -28,6 +28,7 @@ closeCart.addEventListener("click", function (evt) {
   modalCart.classList.remove("modal-show");
 });
 
+if (deliveryButton) {
 deliveryButton.addEventListener("click", function (evt) {
   slideDelivery.classList.remove("slide-hidden");
   slideWarranty.classList.add("slide-hidden");
@@ -35,8 +36,9 @@ deliveryButton.addEventListener("click", function (evt) {
   deliveryButton.classList.add("services-item-selected");
   warrantyButton.classList.remove("services-item-selected");
   creditButton.classList.remove("services-item-selected");
-});
+});}
 
+if (warrantyButton) {
 warrantyButton.addEventListener("click", function (evt) {
   slideDelivery.classList.add("slide-hidden");
   slideWarranty.classList.remove("slide-hidden");
@@ -44,8 +46,9 @@ warrantyButton.addEventListener("click", function (evt) {
   deliveryButton.classList.remove("services-item-selected");
   warrantyButton.classList.add("services-item-selected");
   creditButton.classList.remove("services-item-selected");
-});
+});}
 
+if (creditButton) {
 creditButton.addEventListener("click", function (evt) {
   slideDelivery.classList.add("slide-hidden");
   slideWarranty.classList.add("slide-hidden");
@@ -53,9 +56,11 @@ creditButton.addEventListener("click", function (evt) {
   deliveryButton.classList.remove("services-item-selected");
   warrantyButton.classList.remove("services-item-selected");
   creditButton.classList.add("services-item-selected");
-});
+});}
 
+if (lostButton) {
 lostButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
 	modalFeedback.classList.add("modal-show");
 	if (modalMap.classList.contains("modal-show")){
 		modalMap.classList.remove("modal-show");
@@ -64,8 +69,9 @@ lostButton.addEventListener("click", function (evt) {
 
 feedbackClose.addEventListener("click", function (evt) {
 	modalFeedback.classList.remove("modal-show");
-});
+});}
 
+if (map) {
 map.addEventListener("click", function (evt) {
 	modalMap.classList.add("modal-show");
 	if (modalFeedback.classList.contains("modal-show")){
@@ -75,5 +81,5 @@ map.addEventListener("click", function (evt) {
 
 mapClose.addEventListener("click", function (evt) {
 	modalMap.classList.remove("modal-show");
-});
+});}
 

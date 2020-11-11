@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>HTML Academy: Техномарт</title>
     <link href="./css/normalize.css" rel="stylesheet" />
     <link href="./css/style.min.css" rel="stylesheet" />
@@ -30,11 +31,9 @@
             </form>
           </div>
           <a class="bookmarks-link header-button" href="">
-            <img class="bookmarks-icon" src="img/icon-bookmark.svg" alt="кнопка закладок" />
             Закладки: 0
           </a>
           <a href="" class="cart-link header-button">
-            <img class="cart-icon" src="img/icon-cart.svg" alt="кнопка корзины" />
             Корзина: 0
           </a>
           <a class="order-checkout-button header-button" href="">
@@ -121,15 +120,18 @@
             <a class="features-item-button" href="">бесплатно</a>
           </div>
           <div class="slider">
-            <div class="slider-header-background">
+            <div class="slider-header-background"></div>
+            <div class="slide slide-1 slide-hidden">
               <h2 class="slider-title">перфораторы</h2>
               <p class="slider-description">Настоящие мужские игрушки</p>
-              <h2 class="slider-title slide-hidden">дрели</h2>
-              <p class="slider-description slide-hidden">Соседям на радость!</p>
+              <img class="slider-image" src="img/slider-photo-1.jpg" alt="мужчина с перфоратором"/>
+            </div>
+            <div class="slide slide-2">
+              <h2 class="slider-title">дрели</h2>
+              <p class="slider-description">Соседям на радость!</p>
+              <img class="slider-image" src="img/slider-photo-2.jpg" alt="мужчина с дрелью" />
             </div>
             <a class="red-button slider-button" href="catalog.html">открыть каталог</a>
-            <img class="slider-image" src="img/slider-photo-1.jpg" alt="мужчина с перфоратором" />
-            <img class="slider-image slide-hidden" src="img/slider-photo-2.jpg" alt="мужчина с дрелью" />
             <ul class="slider-dots">
               <li class="toggle-dot">
                 <input class="toggle-item-1 visually-hidden" type="radio" id="toggle-dot-1" name="toggle-dot" />
@@ -280,8 +282,8 @@
           <h3 class="black-heading">компания «техномарт»</h3>
           <div class="about-company-text">
             <p>
-              Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
-              ремонта и строительства не оставит равнодушными любителей сэкономить на <br>
+              Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
+              ремонта и строительства не оставит равнодушными любителей сэкономить на
               гастарбайтерах.
             </p>
             <div class="transport-companies">
@@ -301,7 +303,7 @@
         <section class="contacts">
           <h3 class="black-heading">контакты</h3>
           <p class="contacts-text">
-            Вы можете забрать товар сами, <br>
+            Вы можете забрать товар сами,
             заехав в наш офис:
           </p>
           <img class="map-image" src="img/map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158" />
